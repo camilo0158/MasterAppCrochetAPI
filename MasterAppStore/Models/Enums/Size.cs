@@ -2,7 +2,7 @@
 {
     public enum Size
     {
-        mall,
+        Small,
         Medium,
         Large
     }
