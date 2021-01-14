@@ -47,3 +47,4 @@ C:\Users\jmartineza\Documents\Azure\Projects\MasterAppStoreSln\MasterAppStoreLoa
 C:\Users\jmartineza\Documents\Azure\Projects\MasterAppStoreSln\MasterAppStoreLoadFiles\obj\Debug\netcoreapp3.1\MasterAppStoreLoadFiles.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\jmartineza\Documents\Azure\Projects\MasterAppStoreSln\MasterAppStoreLoadFiles\obj\Debug\netcoreapp3.1\MasterAppStoreLoadFiles.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\jmartineza\Documents\Azure\Projects\MasterAppStoreSln\MasterAppStoreLoadFiles\bin\Debug\netcoreapp3.1\libman.json
+C:\Users\jmartineza\Documents\Azure\Projects\MasterAppStoreSln\MasterAppStoreLoadFiles\bin\Debug\netcoreapp3.1\Properties\ServiceDependencies\masterappcrochetstorage - Web Deploy\profile.arm.json
