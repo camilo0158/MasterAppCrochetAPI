@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30621.155
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MasterAppStore", "MasterAppStore\MasterAppStore.csproj", "{0E8FBA1D-0D73-4BA4-9494-8D99B40A3CA0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MasterAppStore", "MasterAppStore\MasterAppStore.csproj", "{0E8FBA1D-0D73-4BA4-9494-8D99B40A3CA0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MasterAppStoreLoadFiles", "MasterAppStoreLoadFiles\MasterAppStoreLoadFiles.csproj", "{F55491DF-51D5-4FD5-990A-9F835AF97984}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{0E8FBA1D-0D73-4BA4-9494-8D99B40A3CA0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0E8FBA1D-0D73-4BA4-9494-8D99B40A3CA0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0E8FBA1D-0D73-4BA4-9494-8D99B40A3CA0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F55491DF-51D5-4FD5-990A-9F835AF97984}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F55491DF-51D5-4FD5-990A-9F835AF97984}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F55491DF-51D5-4FD5-990A-9F835AF97984}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F55491DF-51D5-4FD5-990A-9F835AF97984}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
