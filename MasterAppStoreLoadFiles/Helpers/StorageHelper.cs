@@ -49,14 +49,26 @@
             return results;
         }
 
-        public static async Task<bool> UploadFileToStorage(Stream fileStream, string fileName, AzureStorageConfig storageConfig)
+        public static async Task<bool> UploadFileToStorage(Stream fileStream, string fileName, AzureStorageConfig storageConfig, string idProduct)
         {
             BlobContainerClient containerClient = await GetCloudBlobContainer(storageConfig.ImageContainer, storageConfig.ConnectionString);
-            //string blobName = Guid.NewGuid().ToString().ToLower().Replace("-", string.Empty);
-            string blobName = fileName;
+            string blobName = string.Concat(Guid.NewGuid().ToString().ToLower().Replace("-", string.Empty), Path.GetExtension(fileName));
             BlobClient blobClient = containerClient.GetBlobClient(blobName);
             await blobClient.UploadAsync(fileStream);
+            await SetMetadata(blobClient, idProduct);
             return await Task.FromResult(true);
+        }
+
+        public static async Task<bool> SetMetadata(BlobClient blobClient, string idProduct)
+        {
+            string p_key = "ProductId";
+            string p_value = idProduct;
+            IDictionary<string, string> objProdduct = new Dictionary<string, string>();
+            objProdduct.Add(p_key, p_value);
+            blobClient.SetMetadata(objProdduct);
+
+            return await Task.FromResult(true);
+
         }
         
 }

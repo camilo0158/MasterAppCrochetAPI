@@ -36,14 +36,17 @@
         }
 
         [HttpPost]
-        public async Task<ActionResult> Post(ICollection<IFormFile> files)
+        public async Task<ActionResult> Post(ICollection<IFormFile> files, string idProduct)
         {
             bool isUploaded = false;
 
             try
             {
                 if (files.Count == 0)
-                    return BadRequest("No files received from the uoload");
+                    return BadRequest("No files received from the upload");
+
+                if (idProduct == null) 
+                    return BadRequest("No productId received from the upload");
 
                 foreach (var formFile in files)
                 {
@@ -51,7 +54,7 @@
                     {
                         using (Stream stream = formFile.OpenReadStream())
                         {
-                            isUploaded = await StorageHelper.UploadFileToStorage(stream, formFile.FileName, storageConfig);
+                            isUploaded = await StorageHelper.UploadFileToStorage(stream, formFile.FileName, storageConfig, idProduct);
                         }
                     }
                     else
