@@ -52,7 +52,7 @@
         public static async Task<bool> UploadFileToStorage(Stream fileStream, string fileName, AzureStorageConfig storageConfig, string idProduct)
         {
             BlobContainerClient containerClient = await GetCloudBlobContainer(storageConfig.ImageContainer, storageConfig.ConnectionString);
-            string blobName = string.Concat(Guid.NewGuid().ToString().ToLower().Replace("-", string.Empty), Path.GetExtension(fileName));
+            string blobName = fileName;
             BlobClient blobClient = containerClient.GetBlobClient(blobName);
             await blobClient.UploadAsync(fileStream);
             await SetMetadata(blobClient, idProduct);
@@ -68,7 +68,6 @@
             blobClient.SetMetadata(objProdduct);
 
             return await Task.FromResult(true);
-
         }
         
 }

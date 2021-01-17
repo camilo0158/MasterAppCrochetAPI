@@ -54,3 +54,4 @@ C:\Users\jmartineza\Documents\Azure\Projects\MasterAppStoreSln\MasterAppStore\ob
 C:\Users\jmartineza\Documents\Azure\Projects\MasterAppStoreSln\MasterAppStore\obj\Release\netcoreapp3.1\MasterAppStore.pdb
 C:\Users\jmartineza\Documents\Azure\Projects\MasterAppStoreSln\MasterAppStore\obj\Release\netcoreapp3.1\MasterAppStore.genruntimeconfig.cache
 C:\Users\jmartineza\Documents\Azure\Projects\MasterAppStoreSln\MasterAppStore\obj\Release\netcoreapp3.1\MasterAppStore.csprojAssemblyReference.cache
+C:\Users\jmartineza\Documents\Azure\Projects\MasterAppStoreSln\MasterAppStore\bin\Release\netcoreapp3.1\Properties\ServiceDependencies\masterappcrochet - Web Deploy1\profile.arm.json

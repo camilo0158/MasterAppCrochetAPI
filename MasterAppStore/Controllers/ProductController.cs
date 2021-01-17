@@ -38,7 +38,7 @@
         }
 
         [HttpPost]
-        public async Task<ActionResult<Product>> CreateAsync([Bind("Category, Description, Quantity, Color, Size, Price")] Product product)
+        public async Task<ActionResult<Product>> CreateAsync([Bind("Name, Category, Description, Quantity, Color, Size, Price")] Product product)
         {
             if (ModelState.IsValid)
             {

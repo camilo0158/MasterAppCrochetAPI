@@ -45,7 +45,7 @@
                 if (files.Count == 0)
                     return BadRequest("No files received from the upload");
 
-                if (idProduct == null) 
+                if (idProduct == null)
                     return BadRequest("No productId received from the upload");
 
                 foreach (var formFile in files)
@@ -59,12 +59,12 @@
                     }
                     else
                     {
-                        return new UnsupportedMediaTypeResult();
+                        return BadRequest("Unsuported files media");
                     }
                 }
                 if (isUploaded)
                 {
-                    return new AcceptedResult();
+                    return Ok(isUploaded);
                 }
                 else
                 {
