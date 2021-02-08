@@ -3,7 +3,6 @@ C:\Users\jmartineza\Documents\Azure\Projects\MasterAppStoreSln\MasterAppStore\bi
 C:\Users\jmartineza\Documents\Azure\Projects\MasterAppStoreSln\MasterAppStore\bin\Release\netcoreapp3.1\appsettings.Development.json
 C:\Users\jmartineza\Documents\Azure\Projects\MasterAppStoreSln\MasterAppStore\bin\Release\netcoreapp3.1\appsettings.json
 C:\Users\jmartineza\Documents\Azure\Projects\MasterAppStoreSln\MasterAppStore\bin\Release\netcoreapp3.1\Properties\launchSettings.json
-C:\Users\jmartineza\Documents\Azure\Projects\MasterAppStoreSln\MasterAppStore\bin\Release\netcoreapp3.1\Properties\ServiceDependencies\masterappcrochet - Web Deploy\profile.arm.json
 C:\Users\jmartineza\Documents\Azure\Projects\MasterAppStoreSln\MasterAppStore\bin\Release\netcoreapp3.1\MasterAppStore.exe
 C:\Users\jmartineza\Documents\Azure\Projects\MasterAppStoreSln\MasterAppStore\bin\Release\netcoreapp3.1\MasterAppStore.deps.json
 C:\Users\jmartineza\Documents\Azure\Projects\MasterAppStoreSln\MasterAppStore\bin\Release\netcoreapp3.1\MasterAppStore.runtimeconfig.json

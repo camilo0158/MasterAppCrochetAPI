@@ -3,6 +3,7 @@
     using MasterAppStore.Models;
     using MasterAppStore.Services;
     using Microsoft.AspNetCore.Mvc;
+    using Microsoft.Extensions.Logging;
     using System;
     using System.Collections.Generic;
     using System.Threading.Tasks;
@@ -12,25 +13,31 @@
     public class ProductController : ControllerBase
     {
         private readonly ICosmosDBProductService _productService;
+        private readonly ILogger _logger;
 
-        public ProductController(ICosmosDBProductService productService)
+        public ProductController(ICosmosDBProductService productService, ILoggerFactory logger)
         {
             _productService = productService;
+            _logger = logger.CreateLogger("Product");
+
         }
 
         [HttpGet]
         public async Task<ActionResult<List<Product>>> GetAsync()
         {
             string query = "SELECT * FROM c";
-            List<Product> products =  await _productService.GetProductsAsync(query);
+            List<Product> products = await _productService.GetProductsAsync(query);
+
+            _logger.LogInformation("Enter in the metho get products");            
+
             return products;
         }
 
         [HttpGet("{id}/{category}")]
         public async Task<ActionResult<Product>> GetProductAsync([Bind("Id, Category")] string id, string category)
         {
-            Product product =  await _productService.GetProductAsync(id, int.Parse(category));
-            if(product == null)
+            Product product = await _productService.GetProductAsync(id, int.Parse(category));
+            if (product == null)
             {
                 return NotFound();
             }
@@ -51,9 +58,9 @@
         [HttpPut]
         public async Task<ActionResult> UpdateAsync([Bind("Id, Category, Description, Quantity, Color, Size, Price")] Product product)
         {
-            
-            Product productToUpdate =  await _productService.GetProductAsync(product.Id, (int)product.Category);
-            if(productToUpdate == null)
+
+            Product productToUpdate = await _productService.GetProductAsync(product.Id, (int)product.Category);
+            if (productToUpdate == null)
             {
                 return NotFound();
             }

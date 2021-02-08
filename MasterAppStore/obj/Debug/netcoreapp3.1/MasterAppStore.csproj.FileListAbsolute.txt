@@ -53,4 +53,4 @@ C:\Users\jmartineza\Documents\Azure\Projects\MasterAppStoreSln\MasterAppStore\ob
 C:\Users\jmartineza\Documents\Azure\Projects\MasterAppStoreSln\MasterAppStore\obj\Debug\netcoreapp3.1\MasterAppStore.dll
 C:\Users\jmartineza\Documents\Azure\Projects\MasterAppStoreSln\MasterAppStore\obj\Debug\netcoreapp3.1\MasterAppStore.pdb
 C:\Users\jmartineza\Documents\Azure\Projects\MasterAppStoreSln\MasterAppStore\obj\Debug\netcoreapp3.1\MasterAppStore.genruntimeconfig.cache
-C:\Users\jmartineza\Documents\Azure\Projects\MasterAppStoreSln\MasterAppStore\bin\Debug\netcoreapp3.1\Properties\ServiceDependencies\masterappcrochet - Web Deploy\profile.arm.json
+C:\Users\jmartineza\Documents\Azure\Projects\MasterAppStoreSln\MasterAppStore\bin\Debug\netcoreapp3.1\Properties\ServiceDependencies\masterappcrochet - Web Deploy1\profile.arm.json

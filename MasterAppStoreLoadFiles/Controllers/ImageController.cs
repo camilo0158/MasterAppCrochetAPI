@@ -27,6 +27,7 @@
             try
             {
                 List<string> results = await StorageHelper.GetImagesUrls(storageConfig);
+
                 return Ok(results);
             }
             catch (Exception ex)
